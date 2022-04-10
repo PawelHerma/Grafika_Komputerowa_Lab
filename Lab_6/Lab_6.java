@@ -17,7 +17,7 @@ import com.jogamp.opengl.util.gl2.GLUT;
  * turned off. The user can rotate the stage about the y-axis
  * by dragging the mouse horizontally.
  */
-public class Lab6 extends GLJPanel implements GLEventListener  {
+public class Lab_6 extends GLJPanel implements GLEventListener  {
 
 	private double rotateY = 0;  // rotation of view about the y-axis, controlled by mouse.
 
@@ -28,7 +28,7 @@ public class Lab6 extends GLJPanel implements GLEventListener  {
 	 */
 	public static void main(String[] args) {
 		JFrame window = new JFrame("Stage");
-		Lab6 panel = new Lab6();
+		Lab_6 panel = new Lab_6();
 		window.setContentPane(panel);
 		window.pack();
 		window.setResizable(false);
@@ -40,7 +40,7 @@ public class Lab6 extends GLJPanel implements GLEventListener  {
 	/**
 	 * Constructor for class Lab6, sets the preferred size and configures event listeners
 	 */
-	public Lab6() {
+	public Lab_6() {
 		super( new GLCapabilities(null) ); // Makes a panel with default OpenGL "capabilities".
 		setPreferredSize( new Dimension(1000,500) );
 		addGLEventListener(this); // This panel will respond to OpenGL events.
@@ -201,11 +201,11 @@ public class Lab6 extends GLJPanel implements GLEventListener  {
 				return;
 			prevX = evt.getX();
 			dragging = true;
-			Lab6.this.addMouseMotionListener(this);
+			Lab_6.this.addMouseMotionListener(this);
 		}
 		public void mouseReleased(MouseEvent evt) {
 			dragging = false;
-			Lab6.this.removeMouseMotionListener(this);
+			Lab_6.this.removeMouseMotionListener(this);
 		}
 
 	} // end nested class MouseHandler
