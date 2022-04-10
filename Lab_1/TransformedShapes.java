@@ -43,13 +43,13 @@ public class TransformedShapes extends JPanel {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         resetTransform();
-        g2.translate(150,450);
+        g2.translate(350,400);
         g2.scale(1.5, 0.8);
         g2.setColor(Color.BLUE);
         square();
 
         resetTransform();
-        g2.translate(150, 370);
+        g2.translate(350, 320);
         g2.rotate(Math.toRadians(180));
         g2.scale(0.8,0.8);
         g2.setColor(Color.BLUE);
@@ -57,7 +57,7 @@ public class TransformedShapes extends JPanel {
 
 
         resetTransform();
-        g2.translate(150, 530);
+        g2.translate(350, 480);
         g2.scale(0.8,0.8);
         triangle();
         /* ----------------------------------------------------------------------- */

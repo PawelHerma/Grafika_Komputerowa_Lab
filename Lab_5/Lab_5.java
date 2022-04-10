@@ -1,7 +1,12 @@
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*;
+import java.awt.Dimension;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
+import javax.swing.JFrame;
+
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.awt.*;
+import com.jogamp.opengl.util.gl2.GLUT;
 /**
  * CPSC 424, Fall 2015, Lab 4:  Some objects in 3D.  The arrow keys
  * can be used to rotate the object.  The number keys 1 through 6
@@ -239,6 +244,7 @@ public class Lab_5 extends GLJPanel implements GLEventListener, KeyListener{
 
 	public void keyTyped(KeyEvent evt) {
 	}
+	}
 
-} // end class Lab4
-© 2022 GitHub, Inc.
+
+ // end class Lab4

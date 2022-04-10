@@ -96,17 +96,6 @@
      * Moje Funkcje
      */
     
-    
-    
-    /**
-     * Sets up a transformation in the graphics context so that the canvas will
-     * show x-values in the range from left to right, and y-values in the range
-     * from bottom to top.  If preserveAspect is true, then one of the ranges
-     * will be increased, if necessary, to account for the aspect ratio of the
-     * canvas.  This function sets the global variable pixelsize to be the
-     * size of a pixel in the new coordinate system.  (If preseverAspect is
-     * true, pixelSize is the maximum of its horizontal and vertical sizes.)
-     */
     function applyWindowToViewportTransformation(left,right,bottom,top,preserveAspect) {
         var displayAspect, windowAspect;
         var excess;
