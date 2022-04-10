@@ -19,14 +19,6 @@ public class TransformedShapes extends JPanel {
     }
 
     /**
-     * Draws a filled circle of radius 50 (diameter 100) centered at (0,0),
-     * subject to whatever transform(s) have been applied to g2.
-     */
-    private void circle() {
-        g2.fillOval(-50,-50,100,100);
-    }
-
-    /**
      * Draws a filled square with side 100 centered at (0,0), subject
      * to whatever transform(s) have been applied to g2.
      */
@@ -49,19 +41,6 @@ public class TransformedShapes extends JPanel {
         super.paintComponent(g);
         g2 = (Graphics2D)g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
-        // TODO Draw the required image, using ONLY the four methods defined above,
-        // along with g2.setColor, g1.scale, g2.translate, and g2.rotate.
-
-        /* ----------------------------------------------------------------------- */
-
-        // REMOVE THE FOLLOWING CODE, which draws a big red X in the upper right quadrant,
-        // and insert your own code to draw the required pictures in the four quadrants.
-
-        // The next two line scale the X to be twice the original size
-        // and then moves the center of the X from (0,0) to (450,150).
-
-        // Część 4 ///
 
         resetTransform();
         g2.translate(150,450);

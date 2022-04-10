@@ -1,13 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import com.jogamp.opengl.*;
-import com.jogamp.opengl.awt.*;
-import com.jogamp.opengl.util.gl2.GLUT;
-
-import static com.jogamp.opengl.GL.GL_POINTS;
-import static com.jogamp.opengl.GL.GL_TRIANGLE_FAN;
-import static com.jogamp.opengl.GL2ES1.GL_POINT_SMOOTH;
 
 /**
  * CPSC 424, Fall 2015, Lab 4:  Some objects in 3D.  The arrow keys
@@ -15,7 +8,7 @@ import static com.jogamp.opengl.GL2ES1.GL_POINT_SMOOTH;
  * select the object.  The space bar toggles the use of anaglyph
  * stereo.
  */
-public class Lab5 extends GLJPanel implements GLEventListener, KeyListener{
+public class Lab_5 extends GLJPanel implements GLEventListener, KeyListener{
 
 	/**
 	 * A main routine to create and show a window that contains a
@@ -24,7 +17,7 @@ public class Lab5 extends GLJPanel implements GLEventListener, KeyListener{
 	 */
 	public static void main(String[] args) {
 		JFrame window = new JFrame("Some Objects in 3D");
-		Lab5 panel = new Lab5();
+		Lab_5 panel = new Lab_5();
 		window.setContentPane(panel);
 		window.pack();
 		window.setResizable(false);
@@ -36,7 +29,7 @@ public class Lab5 extends GLJPanel implements GLEventListener, KeyListener{
 	/**
 	 * Constructor for class Lab4.
 	 */
-	public Lab5() {
+	public Lab_5() {
 		super( new GLCapabilities(null) ); // Makes a panel with default OpenGL "capabilities".
 		setPreferredSize( new Dimension(700,700) );
 		addGLEventListener(this); // This panel will respond to OpenGL events.
